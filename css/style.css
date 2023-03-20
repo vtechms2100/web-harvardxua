@@ -188,6 +188,7 @@ img {
     font-family: var(--fuentePrincipal);
     color: var(--primario);
     font-size: 2rem;
+    font-weight: bold;
     
 }
 
