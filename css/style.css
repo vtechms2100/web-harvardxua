@@ -209,8 +209,21 @@ img {
     
 }
 
+/**Botones**/
 
-
+.boton {
+    background-color: var(--cuarto);
+    color: var(--primario);
+    padding: 1rem 1rem;
+    font-size: 1,5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: auto;
+    height: auto;
+    
+  }
+  
 
 
 h1 {
