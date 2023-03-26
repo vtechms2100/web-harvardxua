@@ -68,12 +68,38 @@ a {
 
 }
 
-img {
-    max-width: 100%;
-}
 
- 
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+
+  .gallery-item {
+    margin: 0;
+    padding: 0;
+    box-shadow: 4px 4px 10px var(--gris);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .gallery-item:hover {
+    filter: brightness(120%);
+  }
+  
+  img:hover {
+    transform: scale(1.3);
+    
+  }
+  
 .interactiva{
     width: 100%;
     display: flex;
@@ -85,12 +111,13 @@ img {
 
 .interactiva figure{
     position: relative;
-    height: 250px;
-    width: 350px;
+    height: 27rem;
+    width: 33rem;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     cursor: pointer;
+    
 
 }
 
@@ -98,6 +125,8 @@ img {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
+   
+   
 }
 
 .interactiva figure .capa{
@@ -110,6 +139,8 @@ img {
     opacity: 0;
     visibility: hidden;
     text-align: center;
+   ;
+    
 }
 
 .interactiva figure:hover > .capa{
@@ -119,30 +150,31 @@ img {
 }
 
 .interactiva figure:hover > .capa h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin-top: 4.375rem;
+    margin-bottom: 0.938;
 }
 
 .interactiva figure:hover > img{
     transform: scale(1.3);
+    padding: auto;
 }
     
 
 .interactiva figure:hover .capa h3{
     color:#fff;
     font-weight: 400;
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
     transition: all 500ms ease-out;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 
 }
 
 .interactiva figure .capa p{
     color: #fff;
-    font-size: 15px;
+    font-size: 0.938rem;
     line-height: 1.5;
     width: 100%;
-    max-width: 220px;
+    max-width: 13.75rem;
     margin: auto;
 }
 
@@ -308,7 +340,7 @@ h4 {
     background-image: url(../img/logo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 40rem;
     width: auto;
     position: relative;
     margin-bottom: 2rem;
