@@ -178,6 +178,15 @@ a {
     margin: auto;
 }
 
+/** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0rem;
+    }
+}
 
 
 
@@ -192,15 +201,6 @@ a {
 }
 
 
-/** CODIGO AQUI **/
-
-@media (min-width: 768px) {
-    .tres-columnas {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 0rem;
-    }
-}
 
 
 
@@ -236,7 +236,8 @@ a {
 /**Botones**/
 
 .boton {
-    background-color: var(--cuarto);
+    background-color: var(--secundario);
+    font-weight: bold;
     color: var(--primario);
     padding: 1rem 1rem;
     font-size: 1,5rem;
@@ -264,7 +265,7 @@ h2 {
     font-size: 3.2rem;
     text-align: center;
     text-transform: uppercase;
-    color: var(--cuarto);
+    color: var(--secundario);
     font-weight: bold;
 }
 h3 {
@@ -330,17 +331,19 @@ h4 {
     -webkit-box-shadow: -4px 3px 13px 3px rgba(89,89,89,1);
     -moz-box-shadow: -4px 3px 13px 3px rgba(89,89,89,1);
     box-shadow: -4px 3px 13px 3px rgba(89,89,89,1);
-    background-color: var(--blanco);
+    background-image: url(../img/soacha.jpg);
     padding: 2rem;
     border-radius: 1rem;
+    
+    
+    
 }
 
 .logo2 {
     background-image: url(../img/logo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40rem;
-    width: auto;
+    height: 450px;
     position: relative;
     margin-bottom: 2rem;
 
@@ -374,7 +377,7 @@ h4 {
 
 /** Contacto **/
 .formulario {
-    background-color: var(--rojo);
+    
     width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
     margin: 0 auto;
     padding: 2rem;
@@ -390,7 +393,7 @@ h4 {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--cuarto);
+    color: var(--secundario);
 }
 
 @media (min-width: 768px) {
@@ -410,10 +413,11 @@ h4 {
     margin-bottom: 2rem;
 }
 .campo label {
-    color: var(--negro);
+    color: var(--secundario);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
+
 }
 .campo textarea {
     height: 15rem;
@@ -429,7 +433,7 @@ h4 {
 
 /** Footer **/
 .site-footer {
-    background-color: var(--cuarto);
+    background-color: var(--secundario);
     padding: 2rem 0;
   }
   
