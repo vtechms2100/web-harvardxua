@@ -73,7 +73,7 @@ a {
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-gap: 2rem;
         
       }
 }
@@ -90,7 +90,7 @@ a {
 
   .gallery-item {
     margin: 0;
-    padding: 0;
+    padding: 5rem;
     box-shadow: 4px 4px 10px var(--gris);
     transition: filter 0.3s ease-in-out;
   }
