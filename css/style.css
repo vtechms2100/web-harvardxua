@@ -374,6 +374,42 @@ h4 {
 
 
 
+.social-icons {
+    position: fixed;
+    bottom: 3vh;
+    right: 3vw;
+    display: block;
+    z-index: 999;
+    touch-action: manipulation;
+  }
+  
+  .social-icons img {
+    display: block;
+    margin-bottom: 1vh;
+    width: 12vw;
+    max-width: 60px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.5);
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .social-icons {
+      bottom: 302px;
+      right: 23px;
+    }
+    .social-icons img {
+      margin-bottom: 5px;
+      width: 40px;
+      max-width: 100%;
+    }
+  }
+  
+
+
 
 /** Contacto **/
 .formulario {
