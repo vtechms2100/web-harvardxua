@@ -218,6 +218,9 @@ a {
     max-width: 100%;
     border-radius: 2%;
   }
+
+
+
   
 /*imagen con movimiento*/
 .imagen {
@@ -538,6 +541,28 @@ a {
     
     
 }
+
+/*nosotros*/
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .nosotros_column {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .nosotros_column:nth-child(1) {
+    background-color: #f2f2f2;
+  }
+  
+  .nosotros_column:nth-child(2) {
+    background-color: #e6e6e6;
+  }
+  
+
 
 /** Footer **/
 .site-footer {
